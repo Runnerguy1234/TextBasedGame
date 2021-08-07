@@ -3,9 +3,10 @@
 
 typedef struct Thing Thing;
 
+// Struct that will represent everything from weapons to people to buildings
 struct Thing {
   char* name;
-  void (*use)(Thing*);
+  char* (*use)(Thing*);
 };
 
 #endif

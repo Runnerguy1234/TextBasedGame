@@ -4,15 +4,14 @@
 #include <string.h>
 
 #include "Thing.h"
+#include "Things.h"
 
-char* input();
-bool yesno();
+char* input(); // Get user input
+bool yesno();  // [Y/n] input
 
 int main() {
-  Thing testhing = {"Test Thing!", &yesno};
-
-  printf("%s", testhing.name);
-  testhing.use(&testhing);
+  printf("%s\n", testhing.name);
+  printf("%s", testhing.use(&testhing));
 
   return 0;
 }

@@ -2,4 +2,6 @@ cmake_minimum_required(VERSION 3.12)
 
 project(TextBasedGame)
 include_directories(src)
-add_executable(program src/main.c)
+
+file(GLOB SOURCES "src/*.c")
+add_executable(game ${SOURCES})
