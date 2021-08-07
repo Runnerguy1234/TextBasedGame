@@ -4,9 +4,9 @@
 #include "Thing.h"
 
 // Use functions
-char* none(Thing*); //Default / unusable
+extern char* none(Thing*); // Default / unusable
 
 // Item templates
-const static Thing testhing = {"thing", &none};
+extern Thing testhing;
 
 #endif

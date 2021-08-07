@@ -3,8 +3,7 @@
 #include <stdbool.h>
 #include <string.h>
 
-#include "Thing.h"
-#include "Things.h"
+#include "Rooms.h"
 
 char* input(); // Get user input
 bool yesno();  // [Y/n] input
