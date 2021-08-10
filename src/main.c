@@ -11,8 +11,10 @@ bool yesno();  // [Y/n] input
 int main() {
   printf("%s\n", testroom.name);
   printf("%s\n", testroom.desc);
-  printf("You see a %s.\n", ((Thing*)(listIndex(testroom.content, 0)))->name);
-  printf("%s", ((Thing*)(listIndex(testroom.content, 0)))->use((Thing*)(listIndex(testroom.content, 0))));
+  
+  Thing *thing0 = listIndex(testroom.content, 0);
+  printf("You see a %s.\n", thing0->name);
+  printf("%s", thing0->use(thing0));
 
   return 0;
 }
