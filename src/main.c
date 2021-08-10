@@ -9,8 +9,10 @@ char* input(); // Get user input
 bool yesno();  // [Y/n] input
 
 int main() {
-  printf("%s\n", testhing.name);
-  printf("%s", testhing.use(&testhing));
+  printf("%s\n", testroom.name);
+  printf("%s\n", testroom.desc);
+  printf("You see a %s.\n", ((Thing*)(listIndex(testroom.content, 0)))->name);
+  printf("%s", ((Thing*)(listIndex(testroom.content, 0)))->use((Thing*)(listIndex(testroom.content, 0))));
 
   return 0;
 }

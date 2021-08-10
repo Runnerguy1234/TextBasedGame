@@ -1,6 +1,6 @@
 #include "Rooms.h"
 
-ListItem content_testroom = {NULL, NULL};
+ListItem content_testroom = {&testhing, NULL};
 ListItem links_testroom = {NULL, NULL};
 
 Room testroom = {
